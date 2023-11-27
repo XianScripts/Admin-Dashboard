@@ -1,7 +1,6 @@
 body {
   box-sizing: border-box;
   font-family: Roboto-black;
-  font-size: ;
   
 }
 
@@ -71,6 +70,10 @@ ul {
 .avatar-small {
   height: 40px;
 }
+.name-small {
+  width: 200px;
+  font-weight: bolder;
+}
 
 /* Header bottom left wrapper */
 .avatar-large {
@@ -81,19 +84,27 @@ ul {
   width: 100%;
   grid-column: 2;
   grid-row: 1;
+  font-weight: bolder;
+  position: relative;
+  top: 5px;
 }
 .name-large {
   grid-column: 2;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  position: relative;
+  bottom: 15px;
 }
 
 .header-bottom-left-wrapper {
   display: grid;
-  grid-template-columns: 70px 70px;
-  grid-template-rows: 50px 50px;
+  grid-template-columns: 70px 400px;
+  grid-template-rows: 30px 60px;
   grid-column: 1;
   grid-row: 2;
   position: relative;
   left: 30px;
+  gap: 1rem;
   
 }
 
@@ -101,15 +112,23 @@ ul {
 /* Header bottom right wrapper*/
 .header-bottom-right-wrapper {
   display: flex;
-  gap: 50px;
+  gap: 20px;
   grid-column: 3;
+  margin-right: 30px;
 }
+.header-button {
+  width: 90px;
+  border-radius: 20%;
+  background-color: #22d3ee;
+  color: white;
+}
+
 
 /* SideBar */
 .sidebar {
   grid-column: 1 ;
   grid-row: 1 / 3;
-  background-color: #759194;
+  background-color: #22d3ee;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
 }
