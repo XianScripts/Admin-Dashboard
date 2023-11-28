@@ -137,6 +137,24 @@ ul {
   grid-template-rows: 1fr 1fr 1fr;
 }
 
+li {
+  display: flex;
+  gap: 10px;
+  position: relative;
+}
+
+.sidebar-icon {
+  width: 30px;
+  height: 20px;
+  position: relative;
+}
+
+
+
+
+
+
+
 
 
 /* Main content */
