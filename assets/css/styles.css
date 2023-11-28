@@ -37,6 +37,7 @@ ul {
   grid-template-rows: 1fr 1fr;
   justify-items: flex-start;
   align-items: center;
+  height: 170px;
 }
 
 /* Header assets */
@@ -133,22 +134,47 @@ ul {
   grid-column: 1 ;
   grid-row: 1 / 3;
   background-color: var(--main-color);
+  color: white;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
+}
+.primary-links {
+  display: flex;
+  position: relative;
+  left: 15px;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 li {
   display: flex;
   gap: 10px;
   position: relative;
+  margin-bottom: 5px;
 }
 
+h3 {
+  display: flex;
+  font-weight: bolder;
+  font-size: 20px;
+  position: relative;
+}
+
+.dashboard-header-icon {
+  width: 50px;
+  height: 40px;
+  position: relative;
+  right: 8px;
+
+}
 .sidebar-icon {
   width: 30px;
   height: 20px;
   position: relative;
 }
-
+img[src="assets/svg/account-group.svg"], .dashboard-header {
+  margin-bottom: 50px;
+}
 
 
 
