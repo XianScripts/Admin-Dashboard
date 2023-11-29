@@ -148,23 +148,24 @@ ul {
 
 li {
   display: flex;
-  gap: 10px;
+  gap: 14px;
   position: relative;
   margin-bottom: 5px;
 }
 
-h3 {
+.dashboard-header-container {
   display: flex;
   font-weight: bolder;
   font-size: 20px;
   position: relative;
+  right: 8px;
 }
 
 .dashboard-header-icon {
   width: 50px;
   height: 40px;
   position: relative;
-  right: 8px;
+  top: 18px;
 
 }
 .sidebar-icon {
@@ -173,8 +174,9 @@ h3 {
   position: relative;
 }
 img[src="assets/svg/account-group.svg"], .dashboard-header {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
+
 
 
 
