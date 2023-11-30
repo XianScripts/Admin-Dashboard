@@ -186,13 +186,53 @@ img[src="assets/svg/account-group.svg"], .dashboard-header {
 
 
 /* Main content */
-.main-content {
-  grid-column: 2 /3;
+.main-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 100vh;
+  /* outer container grid */
+  grid-column: 2 / 3;
   grid-row: 2 / 4;
 }
 
+/* Main Cards */
+.projects-grid {
+  display: grid;
+  grid-gap: 10px;
+}
+.main-primary-cards {
+  border: 2px solid orange;
+  width: 415px;
+  height: 225px;
+}
 
-
+/* Announcements container */
+.announcements-container {
+  border: 2px solid green;
+  height: 370px;
+  width:  270px;
+  display: flex;
+  font-size: .7rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  grid-column: 3 / 3;
+  grid-row: 1 / 1;
+}
+/* Trending container */
+.trending {
+  border: 2px solid red;
+  height: 330px;
+  width:  270px;
+  display: flex;
+  font-size: .7rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  grid-column:  3 / 3;
+  grid-row: 2 / 3;
+}
 
 
 
