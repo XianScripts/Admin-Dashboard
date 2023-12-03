@@ -5,18 +5,17 @@
 body {
   box-sizing: border-box;
   font-family: Roboto-black;
-  
+  background-color: #E2E8F0;
 }
 
 .container {
     height: 100vh;
+    /* max-width: 1500px; */
+    justify-content: center;
     display: grid;
-    grid-template-columns: 250px 3fr;
-    grid-template-rows: 1fr 3fr;
+    grid-template-columns: 2fr 10fr;
+    grid-template-rows: .8fr 3fr;
   
-}
-.container > div {
-    border: 1px solid black;
 }
 
 ul {
@@ -38,6 +37,8 @@ ul {
   justify-items: flex-start;
   align-items: center;
   height: 170px;
+  background-color: white;
+  
 }
 
 /* Header assets */
@@ -187,19 +188,21 @@ img[src="assets/svg/account-group.svg"], .dashboard-header {
 
 /* Main content */
 .main-body {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  height: 100vh;
+  /* display: grid; */
+  
   /* outer container grid */
   grid-column: 2 / 3;
   grid-row: 2 / 4;
 }
 
 /* Main Cards */
-.projects-grid {
-  display: grid;
+.main-body {
+  display: inline-grid;
   grid-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin-left: 30px;
+  background-color: #E2E8F0;
 }
 .main-primary-cards {
   border: 2px solid orange;
@@ -210,7 +213,7 @@ img[src="assets/svg/account-group.svg"], .dashboard-header {
 /* Announcements container */
 .announcements-container {
   border: 2px solid green;
-  height: 370px;
+  height: 170px;
   width:  270px;
   display: flex;
   font-size: .7rem;
@@ -223,7 +226,7 @@ img[src="assets/svg/account-group.svg"], .dashboard-header {
 /* Trending container */
 .trending {
   border: 2px solid red;
-  height: 330px;
+  /* height: 330px; */
   width:  270px;
   display: flex;
   font-size: .7rem;
