@@ -193,6 +193,7 @@ img[src="assets/svg/account-group.svg"], .dashboard-header {
   left: 2rem;
   bottom: 1rem;
   font-size: 1.5rem;
+  font-weight: bolder;
 }
 
 
@@ -270,7 +271,7 @@ img[src="assets/svg/account-group.svg"], .dashboard-header {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: white;
   border-radius: 10px;
-  padding: 10px;
+  padding-top: .7rem;
   margin-bottom: -2.4rem;
 }
 .announcements-container { 
@@ -298,6 +299,7 @@ img[src="assets/svg/account-group.svg"], .dashboard-header {
   position: relative;
   bottom: 3.5rem;
   margin-bottom: -9.1rem;
+  font-weight: bolder;
 }
 
 /* Trending container */
@@ -342,6 +344,7 @@ img[src="assets/svg/account-group.svg"], .dashboard-header {
 .trending-header {
   font-size: 1.5rem;
   margin-bottom: -6rem;
+  font-weight: bolder;
 }
 
 
@@ -502,9 +505,8 @@ h2 {
 
 
 /* font import */
-@font-face {
-  font-family: Roboto-Black;
-  src: url(/home/xian/Projects/Admin-dashboard/assets/Roboto/Roboto-Black.ttf);
+body {
+  font-family: 'Roboto-Black', sans-serif;
 }
 
 /* CSS Reset */
