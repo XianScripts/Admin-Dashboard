@@ -181,39 +181,72 @@ img[src="assets/svg/account-group.svg"], .dashboard-header {
 
 
 
-
+.main-body {
+  display: inline-grid;
+  grid-template-columns: 3fr 1fr;
+  margin-top: 4rem;
+  
+}
 
 
 
 
 /* Main content */
-.main-body {
-  /* display: grid; */
-  
-  /* outer container grid */
-  grid-column: 2 / 3;
-  grid-row: 2 / 4;
+.nested-main-grid {
+  grid-column: 1 / 2;
+}
+.nested-side-grid {
+  grid-column: 2 / 2;
 }
 
+
 /* Main Cards */
-.main-body {
+.nested-main-grid {
   display: inline-grid;
   grid-gap: 10px;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
   margin-left: 30px;
   background-color: #E2E8F0;
 }
 .main-primary-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   border: 2px solid orange;
+  background-color: white;
   width: 415px;
   height: 225px;
+  border-radius: 10px;
+}
+
+.main-primary-cards > h3, h3 + p + ul {
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+.card-header {
+  margin-bottom: -.8rem;
+}
+
+.cardbody {
+  font-size: 12px;
+  margin-left: 2rem;
+  color: gray;
+  width: 70%;
+  text-align: start;
+}
+.cardboy-icons {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+  position: relative;
+  top: 2rem;
+  margin-right: 1.2rem;
 }
 
 /* Announcements container */
 .announcements-container {
   border: 2px solid green;
-  height: 170px;
+  height: 300px;
   width:  270px;
   display: flex;
   font-size: .7rem;
