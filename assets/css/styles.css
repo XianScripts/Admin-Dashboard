@@ -296,21 +296,21 @@ img[src="assets/svg/account-group.svg"], .dashboard-header {
   font-size: 1.5rem;
   position: relative;
   bottom: 3.5rem;
-  margin-bottom: -8.1rem;
+  margin-bottom: -9.1rem;
 }
 
 /* Trending container */
 .trending {
   height: 300px;
   width:  270px;
-  display: flex;
-  font-size: .7rem;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: white;
   border-radius: 10px;
+  overflow: hidden;
+  align-items: flex-end;
 }
 .trending::before {
   content: "Trending";
@@ -320,16 +320,30 @@ img[src="assets/svg/account-group.svg"], .dashboard-header {
   font-size: 1.5rem;
 }
 
-
-
-
-
-
-
-
-
-
-
+.trending-avatar-small {
+  height: 3.2rem;
+  width: 3rem;
+  border-radius: 50%;
+  grid-column: 1;
+  position: relative;
+  left: 2rem;
+  bottom: 1.7rem;
+}
+.trending-username {
+  color: #101010;
+  opacity: .8;
+  font-size: .8rem;
+  grid-column: 2;
+  position: relative;
+  bottom: 3.5rem;
+}
+.trending-motto {
+  font-size: .7rem;
+  grid-column: 2;
+  position: relative;
+  bottom: 4rem;
+  color: lightslategray;
+}
 
 
 
