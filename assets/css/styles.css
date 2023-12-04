@@ -38,7 +38,8 @@ ul {
   align-items: center;
   height: 170px;
   background-color: white;
-  
+  /* W3Schools box shadow */
+  box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
 /* Header assets */
@@ -184,8 +185,14 @@ img[src="assets/svg/account-group.svg"], .dashboard-header {
 .main-body {
   display: inline-grid;
   grid-template-columns: 3fr 1fr;
-  margin-top: 4rem;
-  
+  margin-top: 4rem; 
+}
+.main-body::before {
+  content: "Your Projects";
+  position: relative;
+  left: 2rem;
+  bottom: 1rem;
+  font-size: 1.5rem;
 }
 
 
@@ -196,6 +203,9 @@ img[src="assets/svg/account-group.svg"], .dashboard-header {
   grid-column: 1 / 2;
 }
 .nested-side-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 11vh;
   grid-column: 2 / 2;
 }
 
@@ -212,7 +222,7 @@ img[src="assets/svg/account-group.svg"], .dashboard-header {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  border: 2px solid orange;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: white;
   width: 415px;
   height: 225px;
@@ -243,9 +253,54 @@ img[src="assets/svg/account-group.svg"], .dashboard-header {
   margin-right: 1.2rem;
 }
 
+
+
+
+
 /* Announcements container */
 .announcements-container {
-  border: 2px solid green;
+  height: 300px;
+  width: 270px;
+  overflow: hidden;
+  display: flex;
+  font-size: .7rem;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+.announcements-container { 
+  text-align: left;
+}
+.announcements-container > p {
+  position: relative;
+}
+.announcements-container > h3 {
+  position: relative;
+  left: 2rem;
+}
+.silver-strip {
+  height: 1px;
+  width: 13rem;
+  position: relative;
+  left: 1rem;
+  top: .5rem;
+  background-color: #D2D2D2;
+}
+
+.nested-side-grid::before {
+  content: "Announcements";
+  font-size: 1.5rem;
+  position: relative;
+  bottom: 3.5rem;
+  margin-bottom: -8.1rem;
+}
+
+/* Trending container */
+.trending {
   height: 300px;
   width:  270px;
   display: flex;
@@ -253,21 +308,16 @@ img[src="assets/svg/account-group.svg"], .dashboard-header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  grid-column: 3 / 3;
-  grid-row: 1 / 1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: white;
+  border-radius: 10px;
 }
-/* Trending container */
-.trending {
-  border: 2px solid red;
-  /* height: 330px; */
-  width:  270px;
-  display: flex;
-  font-size: .7rem;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  grid-column:  3 / 3;
-  grid-row: 2 / 3;
+.trending::before {
+  content: "Trending";
+  position: relative;
+  bottom: 6rem;
+  right: 5.4rem;
+  font-size: 1.5rem;
 }
 
 
@@ -283,8 +333,34 @@ img[src="assets/svg/account-group.svg"], .dashboard-header {
 
 
 
+/* Left orange sliver */
+.main-primary-cards {
+  position: relative;
+  overflow: hidden;
+}
 
+.main-primary-cards::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2%;
+  height: 100%;
+  background-color: orange; /* You can customize the color */
+  z-index: 1; /* Ensure it's on top of the content */
+}
 
+/* Adjust the positioning of the content to accommodate the sliver */
+.card-header,
+.cardbody,
+.cardboy-icons {
+  margin-left: %; /* Same as the sliver width */
+}
+
+/* Adjust the positioning of the icons if needed */
+.cardboy-icons {
+  padding-left: 5%; /* Same as the sliver width */
+}
 
 
 
